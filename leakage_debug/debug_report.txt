@@ -1,0 +1,116 @@
+LEAKAGE DEBUG REPORT
+================================================================================
+Dataset rows: 9916
+Dataset cols: 435
+Target positive rate: 0.009379
+
+COLUMN GROUPS
+--------------------------------------------------------------------------------
+Categorical candidates: ['organization', 'observation_type', 'observation_category']
+Embedding cols: 384
+Suspicious cols count: 29
+Top suspicious cols:
+  - is_risk_signal
+  - past_risk_signal_count_7d
+  - past_risk_signal_count_14d
+  - future_incident_count_7d
+  - future_severe_incident_count_7d
+  - future_max_severity_7d
+  - future_mean_severity_7d
+  - future_min_days_to_incident_7d
+  - future_mean_days_to_incident_7d
+  - future_incident_count_14d
+  - future_severe_incident_count_14d
+  - future_max_severity_14d
+  - future_mean_severity_14d
+  - future_min_days_to_incident_14d
+  - future_mean_days_to_incident_14d
+  - future_max_similarity_7d
+  - future_mean_similarity_7d
+  - future_top1_similarity_7d
+  - future_top3_mean_similarity_7d
+  - future_similar_incident_count_7d
+  - future_max_similarity_14d
+  - future_mean_similarity_14d
+  - future_top1_similarity_14d
+  - future_top3_mean_similarity_14d
+  - future_similar_incident_count_14d
+  - incident_in_next_7d
+  - incident_in_next_14d
+  - severe_incident_in_next_14d
+  - semantically_similar_incident_in_next_14d
+
+MODEL COMPARISONS
+--------------------------------------------------------------------------------
+all_except_exact_drop | status=ok | valid_roc_auc=1.0 | valid_pr_auc=1.0 | test_roc_auc=1.0 | test_pr_auc=1.0 | n_features=425
+strict_safe_only | status=ok | valid_roc_auc=1.0 | valid_pr_auc=1.0 | test_roc_auc=0.9984354628422425 | test_pr_auc=0.7829135419633158 | n_features=400
+only_embeddings | status=ok | valid_roc_auc=0.5296951508450481 | valid_pr_auc=0.023385298081494425 | test_roc_auc=0.7659973924380704 | test_pr_auc=0.10966432594663908 | n_features=384
+only_categorical | status=ok | valid_roc_auc=1.0 | valid_pr_auc=1.0 | test_roc_auc=0.9982790091264668 | test_pr_auc=0.7076247282129636 | n_features=3
+only_suspicious | status=ok | valid_roc_auc=1.0 | valid_pr_auc=1.0 | test_roc_auc=1.0 | test_pr_auc=1.0 | n_features=28
+only_base_safe_numeric | status=ok | valid_roc_auc=0.4169694097825515 | valid_pr_auc=0.014639144007758726 | test_roc_auc=0.5651108213820079 | test_pr_auc=0.017654607276778193 | n_features=16
+
+TOP SINGLE-FEATURE SUSPECTS
+--------------------------------------------------------------------------------
+future_incident_count_7d | roc_auc=1.0 | pr_auc=1.0 | unique_train=12
+future_min_days_to_incident_7d | roc_auc=1.0 | pr_auc=1.0 | unique_train=37
+future_mean_days_to_incident_7d | roc_auc=1.0 | pr_auc=1.0 | unique_train=37
+future_incident_count_14d | roc_auc=1.0 | pr_auc=1.0 | unique_train=17
+future_min_days_to_incident_14d | roc_auc=1.0 | pr_auc=1.0 | unique_train=54
+future_mean_days_to_incident_14d | roc_auc=1.0 | pr_auc=1.0 | unique_train=54
+future_max_similarity_7d | roc_auc=1.0 | pr_auc=1.0 | unique_train=37
+future_mean_similarity_7d | roc_auc=1.0 | pr_auc=1.0 | unique_train=37
+future_top1_similarity_7d | roc_auc=1.0 | pr_auc=1.0 | unique_train=37
+future_top3_mean_similarity_7d | roc_auc=1.0 | pr_auc=1.0 | unique_train=37
+future_max_similarity_14d | roc_auc=1.0 | pr_auc=1.0 | unique_train=54
+future_mean_similarity_14d | roc_auc=1.0 | pr_auc=1.0 | unique_train=54
+future_top1_similarity_14d | roc_auc=1.0 | pr_auc=1.0 | unique_train=54
+future_top3_mean_similarity_14d | roc_auc=1.0 | pr_auc=1.0 | unique_train=54
+incident_in_next_7d | roc_auc=1.0 | pr_auc=1.0 | unique_train=2
+incident_in_next_14d | roc_auc=1.0 | pr_auc=1.0 | unique_train=2
+future_similar_incident_count_7d | roc_auc=0.6923076923076923 | pr_auc=0.38999172870140614 | unique_train=13
+future_similar_incident_count_14d | roc_auc=0.6923076923076923 | pr_auc=0.38999172870140614 | unique_train=18
+semantically_similar_incident_in_next_14d | roc_auc=0.6923076923076923 | pr_auc=0.38999172870140614 | unique_train=2
+future_severe_incident_count_14d | roc_auc=0.6538461538461539 | pr_auc=0.3137406947890819 | unique_train=3
+severe_incident_in_next_14d | roc_auc=0.6538461538461539 | pr_auc=0.3137406947890819 | unique_train=2
+emb_22 | roc_auc=0.6344980443285528 | pr_auc=0.01423401032292525 | unique_train=6929
+emb_10 | roc_auc=0.6283702737940026 | pr_auc=0.017402338921994383 | unique_train=6930
+day | roc_auc=0.6270143415906128 | pr_auc=0.014488429132311473 | unique_train=31
+emb_25 | roc_auc=0.6087353324641461 | pr_auc=0.011532581985640633 | unique_train=6929
+emb_15 | roc_auc=0.600573663624511 | pr_auc=0.01222382071761967 | unique_train=6930
+emb_3 | roc_auc=0.6001043024771838 | pr_auc=0.015786315024412592 | unique_train=6931
+emb_14 | roc_auc=0.5942894393741852 | pr_auc=0.01766456025046801 | unique_train=6929
+work_stopped_flag | roc_auc=0.5927249022164276 | pr_auc=0.01074197308068276 | unique_train=2
+emb_4 | roc_auc=0.5877183833116038 | pr_auc=0.010568225794510203 | unique_train=6931
+
+TOP MUTUAL INFO FEATURES
+--------------------------------------------------------------------------------
+future_top1_similarity_14d | mi=0.05433968258370825
+future_max_similarity_14d | mi=0.05363375277330085
+future_incident_count_14d | mi=0.05317757312835847
+future_top3_mean_similarity_14d | mi=0.05189941273975951
+future_min_days_to_incident_14d | mi=0.05127023737817904
+future_mean_days_to_incident_14d | mi=0.0508748407728139
+future_mean_similarity_14d | mi=0.05026349140847275
+future_top3_mean_similarity_7d | mi=0.03694763957187008
+future_mean_similarity_7d | mi=0.03659283538288294
+future_max_similarity_7d | mi=0.03609241140721886
+future_mean_days_to_incident_7d | mi=0.03556678299549465
+future_top1_similarity_7d | mi=0.035209140927641824
+future_incident_count_7d | mi=0.034874127590806214
+incident_in_next_7d | mi=0.03471245247014787
+semantically_similar_incident_in_next_14d | mi=0.03349160997596967
+future_similar_incident_count_14d | mi=0.03342382081121542
+future_min_days_to_incident_7d | mi=0.03322696704329453
+future_similar_incident_count_7d | mi=0.02194445567885861
+future_severe_incident_count_14d | mi=0.017322679148824682
+severe_incident_in_next_14d | mi=0.01675215690260423
+future_severe_incident_count_7d | mi=0.009942300429995887
+future_mean_severity_14d | mi=0.006808945143615741
+future_mean_severity_7d | mi=0.005258162949728695
+future_max_severity_14d | mi=0.0034970618977386847
+future_max_severity_7d | mi=0.003435754277063219
+is_risk_signal | mi=0.0032688283201948165
+emb_213 | mi=0.003053312638624184
+emb_15 | mi=0.0027235572918095086
+emb_26 | mi=0.002632458281979
+hazard_eliminated_flag | mi=0.002442722185507451

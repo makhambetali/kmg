@@ -1,0 +1,522 @@
+{
+  "dataset_rows": 9916,
+  "positive_count": 93,
+  "positive_rate": 0.009378781766841468,
+  "duplicate_rows_on_key_fields": 47,
+  "organization_overlap": {
+    "train_org_count": 64,
+    "valid_org_count": 64,
+    "test_org_count": 64,
+    "valid_seen_in_train": 64,
+    "test_seen_in_train": 64,
+    "valid_unseen": 0,
+    "test_unseen": 0,
+    "sample_test_unseen": []
+  },
+  "top_org_positive_rates": [
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "rows": 154,
+      "positives": 93,
+      "positive_rate": 0.6038961038961039,
+      "min_time": "2024-04-10 19:00:00",
+      "max_time": "2026-02-24 13:30:00"
+    },
+    {
+      "organization": "ТОО \"Алая Гвоздика\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-01-11 20:56:00",
+      "max_time": "2026-02-23 19:55:00"
+    },
+    {
+      "organization": "ТОО \"Алтын Бәйшешек\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-06-25 22:00:00",
+      "max_time": "2026-02-21 15:00:00"
+    },
+    {
+      "organization": "ТОО \"Алый Тюльпан\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-04-12 15:11:00",
+      "max_time": "2026-02-24 14:00:00"
+    },
+    {
+      "organization": "ТОО \"Ароматный Мирт\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "1969-12-16 03:49:00",
+      "max_time": "2026-02-25 22:38:00"
+    },
+    {
+      "organization": "ТОО \"Белая Роза\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-01-11 19:55:00",
+      "max_time": "2026-02-24 14:00:00"
+    },
+    {
+      "organization": "ТОО \"Белоснежная Азалия\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-02-13 23:00:00",
+      "max_time": "2026-02-23 15:53:00"
+    },
+    {
+      "organization": "ТОО \"Белый Лотос KZ\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-02-14 23:46:00",
+      "max_time": "2026-02-25 18:50:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Крокус\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-06-07 01:45:00",
+      "max_time": "2026-02-21 20:30:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Пион\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-01-06 21:00:00",
+      "max_time": "2026-02-23 19:50:00"
+    },
+    {
+      "organization": "ТОО \"Гармония Лилий\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-03-12 14:55:00",
+      "max_time": "2026-02-22 15:00:00"
+    },
+    {
+      "organization": "ТОО \"Голубая Гортензия\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-01-05 19:00:00",
+      "max_time": "2026-02-25 13:20:00"
+    },
+    {
+      "organization": "ТОО \"Горная Эдельвейс\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-04-12 21:52:00",
+      "max_time": "2026-02-23 21:37:00"
+    },
+    {
+      "organization": "ТОО \"Грация Гортензии\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-02-07 14:25:00",
+      "max_time": "2026-02-26 12:40:00"
+    },
+    {
+      "organization": "ТОО \"Дикая Ромашка\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-04-17 20:55:00",
+      "max_time": "2026-02-20 21:30:00"
+    },
+    {
+      "organization": "ТОО \"Жемчужная Фрезия\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-06-12 15:44:00",
+      "max_time": "2026-02-21 17:00:00"
+    },
+    {
+      "organization": "ТОО \"Звёздный Амариллис\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-07-17 21:10:00",
+      "max_time": "2026-02-21 23:32:00"
+    },
+    {
+      "organization": "ТОО \"Золотая Лилия\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-04-09 15:45:00",
+      "max_time": "2026-02-24 07:30:00"
+    },
+    {
+      "organization": "ТОО \"Золотой Подсолнух\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "2024-03-12 17:54:00",
+      "max_time": "2026-02-23 14:00:00"
+    },
+    {
+      "organization": "ТОО \"Изумрудный Папоротник\"",
+      "rows": 155,
+      "positives": 0,
+      "positive_rate": 0.0,
+      "min_time": "1965-03-29 13:28:00",
+      "max_time": "2026-02-21 21:00:00"
+    }
+  ],
+  "top_category_positive_rates": [
+    {
+      "observation_type": "good_practice",
+      "observation_category": "Поддержание чистоты и порядка, Выполнение требований инструкций, СИЗ / Средства по обеспечению безопасности",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "observation_type": "other",
+      "observation_category": "Выполнение требований инструкций, Целостность объекта / Оборудования",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "observation_type": "other",
+      "observation_category": "СИЗ / Средства по обеспечению безопасности, Земляные работы, Трубопроводы / Подземные коммуникации",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "observation_type": "unsafe_action",
+      "observation_category": "Выполнение требований инструкций, Сварка / Шлифовка / Отжиг, СИЗ / Средства по обеспечению безопасности",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "observation_type": "unsafe_action",
+      "observation_category": "Проскальзывание / Спотыкание / Падение, Опасные природные явления / Погодные условия",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "observation_type": "unsafe_behavior",
+      "observation_category": "Работы в замкнутом пространстве, Выполнение требований инструкций, Наряд-допуск / Оценка риска",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "observation_type": "unsafe_condition",
+      "observation_category": "Работы в замкнутом пространстве, Выполнение требований инструкций",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "observation_type": "unsafe_condition",
+      "observation_category": "Целостность объекта / Оборудования, Переносное оборудование / Ручные инструменты, Электрооборудование",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0
+    },
+    {
+      "observation_type": "danger_factor",
+      "observation_category": "Целостность объекта / Оборудования, Падающие предметы",
+      "rows": 2,
+      "positives": 1,
+      "positive_rate": 0.5
+    },
+    {
+      "observation_type": "unsafe_action",
+      "observation_category": "Знаки безопасности / Предупредительные таблички, Вывешивание плакатов",
+      "rows": 2,
+      "positives": 1,
+      "positive_rate": 0.5
+    },
+    {
+      "observation_type": "unsafe_action",
+      "observation_category": "Работы в замкнутом пространстве, Выполнение требований инструкций, СИЗ / Средства по обеспечению безопасности",
+      "rows": 2,
+      "positives": 1,
+      "positive_rate": 0.5
+    },
+    {
+      "observation_type": "unsafe_behavior",
+      "observation_category": "Поддержание чистоты и порядка, Машины и оборудование",
+      "rows": 2,
+      "positives": 1,
+      "positive_rate": 0.5
+    },
+    {
+      "observation_type": "good_practice",
+      "observation_category": "Поддержание чистоты и порядка, Вождение",
+      "rows": 3,
+      "positives": 1,
+      "positive_rate": 0.3333333333333333
+    },
+    {
+      "observation_type": "other",
+      "observation_category": "Работы на высоте / Строительные леса, СИЗ / Средства по обеспечению безопасности",
+      "rows": 3,
+      "positives": 1,
+      "positive_rate": 0.3333333333333333
+    },
+    {
+      "observation_type": "unsafe_action",
+      "observation_category": "Работы на высоте / Строительные леса, СИЗ / Средства по обеспечению безопасности",
+      "rows": 3,
+      "positives": 1,
+      "positive_rate": 0.3333333333333333
+    },
+    {
+      "observation_type": "danger_factor",
+      "observation_category": "Опасные вещества/сероводород",
+      "rows": 4,
+      "positives": 1,
+      "positive_rate": 0.25
+    },
+    {
+      "observation_type": "danger_factor",
+      "observation_category": "Опасные природные явления / Погодные условия",
+      "rows": 4,
+      "positives": 1,
+      "positive_rate": 0.25
+    },
+    {
+      "observation_type": "unsafe_behavior",
+      "observation_category": "Испытание под давлением",
+      "rows": 4,
+      "positives": 1,
+      "positive_rate": 0.25
+    },
+    {
+      "observation_type": "unsafe_action",
+      "observation_category": "Вождение, Выполнение требований инструкций, СИЗ / Средства по обеспечению безопасности",
+      "rows": 5,
+      "positives": 1,
+      "positive_rate": 0.2
+    },
+    {
+      "observation_type": "unsafe_condition",
+      "observation_category": "Целостность объекта / Оборудования, Падающие предметы",
+      "rows": 5,
+      "positives": 1,
+      "positive_rate": 0.2
+    }
+  ],
+  "top_org_category_positive_rates": [
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "good_practice",
+      "observation_category": "Прочее",
+      "rows": 3,
+      "positives": 3,
+      "positive_rate": 1.0,
+      "min_time": "2025-11-28 15:10:00",
+      "max_time": "2026-01-16 01:04:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "unsafe_behavior",
+      "observation_category": "СИЗ / Средства по обеспечению безопасности",
+      "rows": 3,
+      "positives": 3,
+      "positive_rate": 1.0,
+      "min_time": "2025-05-27 20:30:00",
+      "max_time": "2025-09-06 14:40:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "good_practice",
+      "observation_category": "Вождение, Трубопроводы / Подземные коммуникации, Наряд-допуск / Оценка риска",
+      "rows": 2,
+      "positives": 2,
+      "positive_rate": 1.0,
+      "min_time": "2025-05-26 03:10:00",
+      "max_time": "2025-05-26 19:27:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "good_practice",
+      "observation_category": "Наряд-допуск / Оценка риска",
+      "rows": 2,
+      "positives": 2,
+      "positive_rate": 1.0,
+      "min_time": "2025-10-07 16:15:00",
+      "max_time": "2026-01-10 16:41:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "other",
+      "observation_category": "Рабочее место / Эргономика",
+      "rows": 2,
+      "positives": 2,
+      "positive_rate": 1.0,
+      "min_time": "2025-06-23 16:10:00",
+      "max_time": "2025-07-28 14:59:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "unsafe_condition",
+      "observation_category": "Трубопроводы / Подземные коммуникации",
+      "rows": 2,
+      "positives": 2,
+      "positive_rate": 1.0,
+      "min_time": "2025-06-26 15:26:00",
+      "max_time": "2025-11-25 20:02:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "danger_factor",
+      "observation_category": "Опасные вещества/сероводород",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0,
+      "min_time": "2025-08-31 20:22:00",
+      "max_time": "2025-08-31 20:22:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "danger_factor",
+      "observation_category": "Опасные природные явления / Погодные условия",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0,
+      "min_time": "2025-12-10 14:00:00",
+      "max_time": "2025-12-10 14:00:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "danger_factor",
+      "observation_category": "Работы на высоте / Строительные леса",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0,
+      "min_time": "2025-08-29 15:20:00",
+      "max_time": "2025-08-29 15:20:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "danger_factor",
+      "observation_category": "Целостность объекта / Оборудования",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0,
+      "min_time": "2025-11-21 16:00:00",
+      "max_time": "2025-11-21 16:00:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "danger_factor",
+      "observation_category": "Целостность объекта / Оборудования, Падающие предметы",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0,
+      "min_time": "2025-10-15 14:00:00",
+      "max_time": "2025-10-15 14:00:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "good_practice",
+      "observation_category": "Наряд-допуск / Оценка риска, Целостность объекта / Оборудования",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0,
+      "min_time": "2025-10-01 19:47:00",
+      "max_time": "2025-10-01 19:47:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "good_practice",
+      "observation_category": "Поддержание чистоты и порядка, Вождение",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0,
+      "min_time": "2025-10-02 20:33:00",
+      "max_time": "2025-10-02 20:33:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "good_practice",
+      "observation_category": "Поддержание чистоты и порядка, Выполнение требований инструкций, СИЗ / Средства по обеспечению безопасности",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0,
+      "min_time": "2025-12-08 14:30:00",
+      "max_time": "2025-12-08 14:30:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "good_practice",
+      "observation_category": "Поддержание чистоты и порядка, Наряд-допуск / Оценка риска",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0,
+      "min_time": "2025-11-23 11:49:00",
+      "max_time": "2025-11-23 11:49:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "good_practice",
+      "observation_category": "Санитарно-бытовые помещения",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0,
+      "min_time": "2025-07-29 16:35:00",
+      "max_time": "2025-07-29 16:35:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "good_practice",
+      "observation_category": "Трубопроводы / Подземные коммуникации, Вождение",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0,
+      "min_time": "2025-10-08 11:38:00",
+      "max_time": "2025-10-08 11:38:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "good_practice",
+      "observation_category": "Целостность объекта / Оборудования, Наряд-допуск / Оценка риска",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0,
+      "min_time": "2025-07-02 19:14:00",
+      "max_time": "2025-07-02 19:14:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "other",
+      "observation_category": "Выполнение требований инструкций, Целостность объекта / Оборудования",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0,
+      "min_time": "2025-07-20 15:07:00",
+      "max_time": "2025-07-20 15:07:00"
+    },
+    {
+      "organization": "ТОО \"Весенний Букет\"",
+      "observation_type": "other",
+      "observation_category": "Поддержание чистоты и порядка",
+      "rows": 1,
+      "positives": 1,
+      "positive_rate": 1.0,
+      "min_time": "2026-01-22 19:18:00",
+      "max_time": "2026-01-22 19:18:00"
+    }
+  ]
+}
