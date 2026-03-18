@@ -62,11 +62,19 @@ class ClassProbability(BaseModel):
     probability: float
 
 
+class ExtractedEntities(BaseModel):
+    dates: list[str]
+    locations: list[str]
+    organizations: list[str]
+    persons: list[str]
+
+
 class ClassificationResponse(BaseModel):
     query: str
     predicted_class: str
     confidence: float
     probabilities: list[ClassProbability]
+    entities: ExtractedEntities
 
 
 # ─── Схемы F-04 ───
@@ -124,6 +132,7 @@ async def classify_incident(request: ClassificationRequest):
         predicted_class=result["predicted_class"],
         confidence=result["confidence"],
         probabilities=result["probabilities"],
+        entities=result.get("entities", {"dates": [], "locations": [], "organizations": [], "persons": []}),
     )
 
 

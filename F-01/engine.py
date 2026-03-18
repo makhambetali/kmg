@@ -8,6 +8,12 @@ from sentence_transformers import SentenceTransformer
 from sklearn.neighbors import NearestNeighbors
 from collections import defaultdict
 from pathlib import Path
+from natasha import (
+    Segmenter, MorphVocab,
+    NewsEmbedding, NewsNERTagger,
+    DatesExtractor,
+    Doc
+)
 
 DATA_DIR = Path(__file__).parent.parent  # корень проекта (kmg/)
 
@@ -15,11 +21,20 @@ DATA_DIR = Path(__file__).parent.parent  # корень проекта (kmg/)
 _model = None
 _nn_index = None
 _df_incidents = None
+_segmenter = _morph_vocab = _ner_tagger = _dates_extractor = None
 
 
 def init():
-    """Загрузка модели, данных и построение индекса классификации."""
+    """Загрузка модели, данных, построение индекса классификации и NER."""
     global _model, _nn_index, _df_incidents
+    global _segmenter, _morph_vocab, _ner_tagger, _dates_extractor
+
+    print("⏳ [F-01] Инициализация Natasha NER...")
+    _segmenter = Segmenter()
+    _morph_vocab = MorphVocab()
+    emb = NewsEmbedding()
+    _ner_tagger = NewsNERTagger(emb)
+    _dates_extractor = DatesExtractor(_morph_vocab)
 
     print("⏳ [F-01] Загрузка данных для классификации...")
     df = pd.read_csv(DATA_DIR / 'Проишествия_clean.csv', sep=';')
@@ -43,6 +58,35 @@ def init():
     _nn_index.fit(vectors)
     print("   ✅ [F-01] Индекс классификатора готов!")
 
+
+def extract_entities(text: str) -> dict:
+    """Извлекает именованные сущности (даты, локации, организации, люди)."""
+    if _segmenter is None:
+        return {"dates": [], "locations": [], "organizations": [], "persons": []}
+    
+    doc = Doc(text)
+    doc.segment(_segmenter)
+    doc.tag_ner(_ner_tagger)
+    
+    locations = set()
+    persons = set()
+    orgs = set()
+    for span in doc.spans:
+        span.normalize(_morph_vocab)
+        if span.type == 'LOC': locations.add(span.normal)
+        elif span.type == 'PER': persons.add(span.normal)
+        elif span.type == 'ORG': orgs.add(span.normal)
+        
+    dates = []
+    for match in _dates_extractor(text):
+        dates.append(text[match.start:match.stop])
+        
+    return {
+        "dates": list(set(dates)),
+        "locations": list(locations),
+        "organizations": list(orgs),
+        "persons": list(persons)
+    }
 
 def classify(text: str) -> dict:
     """
@@ -80,10 +124,13 @@ def classify(text: str) -> dict:
     predicted_class = probabilities[0]["class_name"] if probabilities else "Неизвестно"
     confidence = probabilities[0]["probability"] if probabilities else 0.0
 
+    entities = extract_entities(text)
+
     return {
         "predicted_class": predicted_class,
         "confidence": confidence,
-        "probabilities": probabilities[:5]  # Отдаём только топ-5 вероятностей
+        "probabilities": probabilities[:5],  # Отдаём только топ-5 вероятностей
+        "entities": entities
     }
 
 
